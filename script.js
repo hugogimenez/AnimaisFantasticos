@@ -60,7 +60,8 @@ function smoothScroll() {
 }
 smoothScroll()
 
-const sections = document.querySelectorAll('.js-scroll');
+function initScrollAnimation() {
+  const sections = document.querySelectorAll('.js-scroll');
 if (sections.length) {
   const windowHalf = window.innerHeight * 0.6;
 
@@ -76,4 +77,5 @@ if (sections.length) {
   }
   animaScroll();
   window.addEventListener('scroll', animaScroll);
-}
+}}
+initScrollAnimation()
